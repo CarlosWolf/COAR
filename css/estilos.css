@@ -18,24 +18,34 @@ body {
 	overflow: hidden;
 }
 
+.contenedorHero {
+	
+	margin: auto;
+	overflow: hidden;
+}
+
 /* ----- ----- HEADER ----- ----- */
 
 header {
 	width: 100%;
-	background: url('../img/camionetas.jpg'), #281a0c;
+	background: url('../img/camionestas_transportadoras.jpg'), #281a0c;
 	background-size: cover;
 	background-attachment: fixed;
-	background-position: center -270px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 1080px;
 }
 
-header .contenedor {
+header .contenedorHero {
 	position: relative;
-	height: 700px;
+	height: 100%;
 }
 
 header .menu {
 	width: 100%;
 	text-align:right;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding-right: 20px;
 }
 
 header .menu a {
@@ -64,8 +74,8 @@ header .textos {
 	width: 100%;
 	color: #fff;
 	position: absolute;
-	top: 50%;
-	margin-top: -52px;
+	top: 72%;
+	left: 65%;
 }
 
 header .textos .nombre {

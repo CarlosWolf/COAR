@@ -48,7 +48,7 @@ $(document).ready(function(){
 
 
 // Efecto Header
-	if ($(window).width() > 800){
+	if ($(window).width() > 100){
 		$('header .textos').css({
 			opacity: 0,
 			marginTop: 0
@@ -59,5 +59,6 @@ $(document).ready(function(){
 			marginTop: '-200px'
 		},1500);
 	}
+	
 
 });

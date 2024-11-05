@@ -13,7 +13,7 @@ body {
 
 .contenedor {
 	width: 90%;
-	max-width: 1000px;
+	
 	margin: auto;
 	overflow: hidden;
 }
@@ -145,8 +145,8 @@ header .textos h3 {
 }
 
 .main .menu {
-	padding-top: 570px;
-	margin-bottom: 50px;
+	padding-top: 880px;
+	margin: 0 0 200px ;
 }
 
 .main .menu .titulo {
@@ -156,60 +156,32 @@ header .textos h3 {
 	margin-bottom: 40px;
 }
 
-.main .menu .contenedor-menu {
-	border: 1px solid #000;
+.main .menu .contenedor-servicios {
+	/*border: 1px solid #000;*/
 	background:transparent;
 	padding: 10px;
 	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+}
+.main .menu .contenedor-servicios .servicio1{
+	/*border: 1px solid #000;*/
+    text-align: center;
+	
 }
 
-.main .menu article {
-	width: 50%;
-	float: left;
-	padding: 20px;
-}
-
-.main .menu article .categoria {
-	font-size: 22px;
-	font-weight: 700;
-	margin-bottom: 40px;
-	text-align: center;
-}
-
-.main .menu article .platillo {
-	overflow: hidden;
-	margin-bottom: 30px;
-	padding-bottom: 20px;
-	border-bottom: 4px dotted #000;
-}
-
-.main .menu article .nombre {
-	font-size:20px;
-	margin-bottom: 15px;
-	float: left;
-}
-
-.main .menu article .precio {
-	float: right;
-	font-size: 20px;
-	margin-bottom: 15px;
-}
-
-.main .menu article .descripcion {
-	font-size: 16px;
-	color: #676767;
-	clear: both;
-}
-
-.main .menu .contenedor-menu2 {
-	border: 1px solid #000;
-	background:transparent;
-	padding: 10px;
-	overflow: hidden;
+.main .menu .contenedor-servicios .servicio1 h2{
+	font-weight: 300;
 }
 
 .main .galeria {
 	overflow: hidden;
+}
+.main .galeria .titulo{
+	font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .main .galeria .foto {
@@ -310,6 +282,7 @@ footer .copyright {
 
 	header .menu {
 		text-align: center;
+		padding: 0 0;
 	}
 
 	header .menu a {
@@ -354,7 +327,22 @@ footer .copyright {
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 426px) {
+	header {
+		width: 100%;
+		background: url('../img/banesCoarMobile.jpg'), #281a0c;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: -15px center;
+		background-repeat: no-repeat;
+		height: 550px;
+	}
+	header .textos {
+		position: absolute;
+		top: 80%;
+		left: 0%;
+		margin: 100px 0 0;
+	}
 	.main .acerca-de article h3 {
 		font-size: 34px;
 		margin-bottom: 10px;

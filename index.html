@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,700' rel='stylesheet' type='text/css'>
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,700' rel='stylesheet'
+		type='text/css'>
 	<link rel="stylesheet" href="css/estilos.css">
 	<title>COAR</title>
 </head>
+
 <body>
 	<header>
 		<div class="contenedorHero">
@@ -40,65 +44,131 @@
 				</article>
 			</div>
 		</section>
-
+		<!--
 		<section class="menu">
 			<div class="contenedor">
 				<h3 class="titulo" id="platillos">Servicios</h3>
-				<div class="contenedor-menu">
-					<div class="contenedor-menu2">
-						<article>
-							<p class="categoria">De Comer</p>
-							<div class="platillo">
-								<p class="nombre">Conchas</p>
-								<p class="precio">$15</p>
-								<p class="descripcion">Conchas de chocole y vainilla.</p>
-							</div>
-							<div class="platillo">
-								<p class="nombre">Donas</p>
-								<p class="precio">$10</p>
-								<p class="descripcion">Donas de sabores varios.</p>
-							</div>
-							<div class="platillo">
-								<p class="nombre">Cuernitos</p>
-								<p class="precio">$20</p>
-								<p class="descripcion">Cuernitos de queso filadelphia.</p>
-							</div>
-							<div class="platillo">
-								<p class="nombre">Sandiwch</p>
-								<p class="precio">$35</p>
-								<p class="descripcion">Sandiwch de jamon y queso o mixto.</p>
-							</div>
-						</article>
-						
-						<article>
-							<p class="categoria">De Tomar</p>
-							<div class="platillo">
-								<p class="nombre">Cafe basico</p>
-								<p class="precio">$10</p>
-								<p class="descripcion">Cafe de la casa.</p>
-							</div>
-							<div class="platillo">
-								<p class="nombre">Cafe cargado</p>
-								<p class="precio">$25</p>
-								<p class="descripcion">Cafe con extra cafeina.</p>
-							</div>
-							<div class="platillo">
-								<p class="nombre">Cafe de Holla</p>
-								<p class="precio">$15</p>
-								<p class="descripcion">Cafe muy cargado.</p>
-							</div>
-							<div class="platillo">
-								<p class="nombre">Cafe de grano</p>
-								<p class="precio">$45</p>
-								<p class="descripcion">Cafe con grano importado.</p>
-							</div>
-						</article>
+				<div class="contenedor-servicios">
+					<div class="servicio1">
+						<h3>Bacalar</h3>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Ciudad_de_Bacalar%2C_Q._Roo._-_panoramio.jpg" 
+							alt="Imagen de Bacalar" width="300" height="200">
+						<p>
+						Imagen de <a href="https://commons.wikimedia.org/wiki/File:Ciudad_de_Bacalar,_Q._Roo._-_panoramio.jpg">Ciudad de Bacalar, Q. Roo.</a>, 
+						licenciada bajo <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+						</p>
+					</div>
+					<div class="servicio1">
+						<h3>Tulum</h3>
+					</div>
+					<div class="servicio1">
+						<h3>Cancun</h3>
+					</div>
+					<div class="servicio1">
+						<h3>Palya del Carmen</h3>
+					</div>
+				</div>
+			</div>
+		</section>  -->
+		<section class="menu">
+			<div class="contenedor">
+				<h3 class="titulo" id="platillos">Servicios</h3>
+				<div class="contenedor-servicios">
+					<div class="servicio1">
+						<h2>Bacalar</h2>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Bacalar_Lagoon.jpg"
+							alt="Imagen de Bacalar" width="300" height="200"
+							onclick="document.getElementById('modal').style.display='block'">
+					</div>
+					<div class="servicio1">
+						<h2>Tulum</h2>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Tulum_Beach%2C_Quintana_Roo%2C_Mexico.jpg"
+							alt="Imagen de Tulum" width="300" height="200"
+							onclick="document.getElementById('modal2').style.display='block'">
+					</div>
+					<div class="servicio1">
+						<h2>Cancún</h2>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Zona_Hotelera%2C_Canc%C3%BAn%2C_Q.R.%2C_Mexico_-_panoramio_%28123%29.jpg"
+							alt="Imagen de Cancun" width="300" height="200"
+							onclick="document.getElementById('modal3').style.display='block'">
+					</div>
+					<div class="servicio1">
+						<h2>Playa del Carmen</h2>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Playa_del_Carmen%2C_Mexico_%2841787392400%29.jpg"
+							alt="Imagen de Cancun" width="300" height="200"
+							onclick="document.getElementById('modal4').style.display='block'">
 					</div>
 				</div>
 			</div>
 		</section>
 
+		<!-- Modal para mostrar la imagen y la licencia -->
+		<div id="modal"
+			style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5);">
+			<div
+				style="background-color:white; margin:15% auto; padding:20px; width:80%; max-width:600px; position:relative;">
+				<span onclick="document.getElementById('modal').style.display='none'"
+					style="position:absolute; top:10px; right:20px; cursor:pointer;">&times;</span>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Bacalar_Lagoon.jpg"
+					alt="Imagen de Bacalar" style="width:100%; height:auto;">
+				<p>
+					Imagen de <a
+						href="https://upload.wikimedia.org/wikipedia/commons/6/63/Bacalar_Lagoon.jpg">Ciudad
+						de Bacalar, Q. Roo.</a>
+					licenciada bajo <a href="https://creativecommons.org/licenses/by/4.0/">License: CC BY-SA 4.0 Attribution: "Photo by Lidia Tretyakova"</a>.
+				</p>
+			</div>
+		</div>
+		<div id="modal2"
+			style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5);">
+			<div
+				style="background-color:white; margin:15% auto; padding:20px; width:80%; max-width:600px; position:relative;">
+				<span onclick="document.getElementById('modal2').style.display='none'"
+					style="position:absolute; top:10px; right:20px; cursor:pointer;">&times;</span>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Tulum_Beach%2C_Quintana_Roo%2C_Mexico.jpg"
+					alt="Imagen de Tulum" style="width:100%; height:auto;">
+				<p>
+					Imagen de <a
+						href="https://upload.wikimedia.org/wikipedia/commons/9/9f/Tulum_Beach%2C_Quintana_Roo%2C_Mexico.jpg">Tulum Beach, Quintana Roo, Mexico</a>
+					licenciada bajo <a href="https://creativecommons.org/licenses/by/4.0/">License: CC BY-SA 4.0 Attribution: "Photo by Didier Moïse"</a>.
+				</p>
+			</div>
+		</div>
+		<div id="modal3"
+			style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5);">
+			<div
+				style="background-color:white; margin:15% auto; padding:20px; width:80%; max-width:600px; position:relative;">
+				<span onclick="document.getElementById('modal3').style.display='none'"
+					style="position:absolute; top:10px; right:20px; cursor:pointer;">&times;</span>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Zona_Hotelera%2C_Canc%C3%BAn%2C_Q.R.%2C_Mexico_-_panoramio_%28123%29.jpg"
+					alt="Imagen de Cancun" style="width:100%; height:auto;">
+				<p>
+					Imagen de <a
+						href="https://web.archive.org/web/20161030225402/http://www.panoramio.com/photo/118019178">	Zona Hotelera, Cancún, Q.R., Mexico</a>
+					"Photo by Alfonzo Buscemi"</a>.
+				</p>
+			</div>
+		</div>
+		<div id="modal4"
+			style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5);">
+			<div
+				style="background-color:white; margin:15% auto; padding:20px; width:80%; max-width:600px; position:relative;">
+				<span onclick="document.getElementById('modal4').style.display='none'"
+					style="position:absolute; top:10px; right:20px; cursor:pointer;">&times;</span>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Playa_del_Carmen%2C_Mexico_%2841787392400%29.jpg"
+					alt="Imagen de Cancun" style="width:100%; height:auto;">
+				<p>
+					Imagen de <a
+						href="https://upload.wikimedia.org/wikipedia/commons/1/15/Playa_del_Carmen%2C_Mexico_%2841787392400%29.jpg">		Playa del Carmen, Mexico</a>
+					<a>"Photo by dronepicr"</a>.
+				</p>
+			</div>
+		</div>
+
+
+
 		<section class="galeria" id="galeria">
+			<H3 class="titulo" id="Vehiculos">Vehiculos</H2>
 			<div class="foto">
 				<img src="img/yaris_rojo_bacalar.png" alt="camioneta ban azul">
 			</div>
@@ -130,7 +200,9 @@
 				<h3 class="titulo">Ubicación</h3>
 				<div class="direccion">
 					<p class="calle">Calle Manuel Avila Camacho
-						<br />Manzana 755, Lote 1, Interior 1A, Esquina Polyuc, Colonia Territorio Federal de Quintana Roo, CA 77026</p>
+						<br />Manzana 755, Lote 1, Interior 1A, Esquina Polyuc, Colonia Territorio Federal de Quintana
+						Roo, CA 77026
+					</p>
 					<p class="telefono">+52 9831260517</p>
 					<p class="correo">contacto [at] transportadoraturisticacoar@gmail.com</p>
 				</div>
@@ -143,7 +215,10 @@
 		</section>
 
 		<section class="mapa">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7565.754773449959!2d-88.3033855497151!3d18.534442190681872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1649641074695!5m2!1ses-419!2smx" width="1600" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7565.754773449959!2d-88.3033855497151!3d18.534442190681872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1649641074695!5m2!1ses-419!2smx"
+				width="1600" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</section>
 	</section>
 
@@ -158,4 +233,5 @@
 	<script src="js/parallax.js"></script>
 	<script src="js/efectos.js"></script>
 </body>
+
 </html>

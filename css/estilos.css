@@ -19,7 +19,6 @@ body {
 }
 
 .contenedorHero {
-	
 	margin: auto;
 	overflow: hidden;
 }
@@ -61,10 +60,11 @@ header .menu a {
 header .menu a:hover {
 	text-decoration: underline;
 }
+/*
 .textos{
 	max-width: 640px;
 	margin-top: -200px;
-}
+}*/
 .textos img{
 	width: 100%;
 }
@@ -203,7 +203,7 @@ header .textos h3 {
 }
 
 .main .ubicacion {
-	background: #fff;
+	/*background: #fff;*/
 	padding: 60px 0;
 }
 
@@ -269,15 +269,79 @@ footer .copyright {
 }
 
 /* ----- ----- MEDIA QUERIES ----- ----- */
+@media screen and (max-width: 2560px) {
+	header {
+		height: 1654px;
+	}
+	header .textos {
+		position: absolute;
+		top: 77%;
+		left: 60%;
+		margin: 100px 0 0;
+		max-width: 900px;
+		
+	}
+	.main .menu {
+		padding-top: 1480px;
+		margin: 0 0 200px ;
+	}
+}
+@media screen and (max-width: 1440px) {
+	header .textos {
+		position: absolute;
+		top: 70%;
+		left: 54%;
+		margin: 100px 0 0;
+		max-width: 640px;
+		
+	}
+	.main .menu {
+		padding-top: 880px;
+		margin: 0 0 200px ;
+	}
+	header {
+		height: 1080px;
+	}
+}
+@media screen and (max-width: 1024px) {
+	header .textos {
+		position: absolute;
+		top: 70%;
+		left: 50%;
+		margin: 100px 0 0;
+		max-width: 475px;
+		
+	}
+	.main .menu {
+		padding-top: 650px;
+		margin: 0 0 200px ;
+	}
+	.main .menu .contenedor-servicios {
+		background: transparent;
+		padding: 10px;
+		display: grid;
+		grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+		gap: 10px; 
+	}
+	header {
+		height: 1080px;
+	}
+}
 @media screen and (max-width: 800px) {
+	header {
+		background-position: -60px 0;
+	}
 	header .contenedor {
 		position: static;
 		height: auto;
 	}
 
 	header .textos {
-		position: static;
-		margin: 100px 0;
+		position: absolute;
+		top: 70%;
+		left: 35%;
+		margin: 100px 0 0;
+		max-width: 470px;
 	}
 
 	header .menu {
@@ -335,19 +399,30 @@ footer .copyright {
 		background-attachment: fixed;
 		background-position: -15px center;
 		background-repeat: no-repeat;
-		height: 550px;
+		height: 878px;
+	}
+	header .menu a {
+		margin: 10px 10px;
+		font-size: 18px;
 	}
 	header .textos {
 		position: absolute;
 		top: 80%;
 		left: 0%;
 		margin: 100px 0 0;
+		max-width: 400px;
 	}
 	.main .acerca-de article h3 {
 		font-size: 34px;
 		margin-bottom: 10px;
 	}
-
+	.main .menu .contenedor-servicios {
+		background: transparent;
+		padding: 10px;
+		display: grid;
+		grid-template-columns: 1fr; /* Dos columnas de igual tamaño */
+		gap: 10px; 
+	}
 	.main .menu article .nombre,
 	.main .menu article .precio {
 		font-size: 16px;

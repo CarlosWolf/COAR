@@ -60,11 +60,11 @@ header .menu a {
 header .menu a:hover {
 	text-decoration: underline;
 }
-/*
+
 .textos{
 	max-width: 640px;
 	margin-top: -200px;
-}*/
+}
 .textos img{
 	width: 100%;
 }
@@ -145,7 +145,7 @@ header .textos h3 {
 }
 
 .main .menu {
-	padding-top: 880px;
+	padding-top: 1080px;
 	margin: 0 0 200px ;
 }
 
@@ -269,6 +269,7 @@ footer .copyright {
 }
 
 /* ----- ----- MEDIA QUERIES ----- ----- */
+
 @media screen and (max-width: 2560px) {
 	header {
 		height: 1654px;
@@ -286,6 +287,8 @@ footer .copyright {
 		margin: 0 0 200px ;
 	}
 }
+	
+
 @media screen and (max-width: 1440px) {
 	header .textos {
 		position: absolute;

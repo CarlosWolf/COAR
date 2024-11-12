@@ -13,7 +13,7 @@ body {
 
 .contenedor {
 	width: 90%;
-	
+
 	margin: auto;
 	overflow: hidden;
 }
@@ -42,7 +42,7 @@ header .contenedorHero {
 
 header .menu {
 	width: 100%;
-	text-align:right;
+	text-align: right;
 	background-color: rgba(0, 0, 0, 0.5);
 	padding-right: 20px;
 }
@@ -61,16 +61,17 @@ header .menu a:hover {
 	text-decoration: underline;
 }
 
-.textos{
+.textos {
 	max-width: 640px;
 	margin-top: -200px;
 }
-.textos img{
+
+.textos img {
 	width: 100%;
 }
 
 header .textos {
-	
+
 	width: 100%;
 	color: #fff;
 	position: absolute;
@@ -104,19 +105,19 @@ header .textos h3 {
 	position: relative;
 }
 
-.main .acerca-de .foto{
+.main .acerca-de .foto {
 	width: 80%;
 	position: absolute;
 	left: 0;
-	top:-50px;
+	top: -50px;
 	z-index: 0;
-	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
-	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
 .main .acerca-de .foto img {
 	width: 100%;
-	vertical-align:top;
+	vertical-align: top;
 	height: auto;
 }
 
@@ -126,10 +127,11 @@ header .textos h3 {
 	width: 50%;
 	position: relative;
 	float: right;
-	top: 500px; /*Con Parallax*/
+	top: 500px;
+	/*Con Parallax*/
 	z-index: 1;
-	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
-	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
 .main .acerca-de article h3 {
@@ -146,7 +148,7 @@ header .textos h3 {
 
 .main .menu {
 	padding-top: 1080px;
-	margin: 0 0 200px ;
+	margin: 0 0 200px;
 }
 
 .main .menu .titulo {
@@ -158,30 +160,32 @@ header .textos h3 {
 
 .main .menu .contenedor-servicios {
 	/*border: 1px solid #000;*/
-	background:transparent;
+	background: transparent;
 	padding: 10px;
 	overflow: hidden;
 	display: flex;
 	justify-content: space-between;
 }
-.main .menu .contenedor-servicios .servicio1{
+
+.main .menu .contenedor-servicios .servicio1 {
 	/*border: 1px solid #000;*/
-    text-align: center;
-	
+	text-align: center;
+
 }
 
-.main .menu .contenedor-servicios .servicio1 h2{
+.main .menu .contenedor-servicios .servicio1 h2 {
 	font-weight: 300;
 }
 
 .main .galeria {
 	overflow: hidden;
 }
-.main .galeria .titulo{
+
+.main .galeria .titulo {
 	font-size: 40px;
-    font-weight: 300;
-    text-align: center;
-    margin-bottom: 40px;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 40px;
 }
 
 .main .galeria .foto {
@@ -268,26 +272,85 @@ footer .copyright {
 	color: #fff;
 }
 
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 40px 0;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.footer-section {
+	flex: 1;
+	min-width: 200px;
+}
+
+.footer-section h4 {
+	font-size: 1.2em;
+	margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section a,
+.footer-section li {
+	color: #bbb;
+	margin: 5px 0;
+	text-decoration: none;
+}
+
+.footer-section ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.footer-section a:hover {
+	color: #fff;
+}
+
+.social-icons img {
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+}
+
+.footer-bottom {
+	text-align: center;
+	padding: 20px;
+	font-size: 0.9em;
+	border-top: 1px solid #444;
+	color: #bbb;
+}
+
+
 /* ----- ----- MEDIA QUERIES ----- ----- */
 
 @media screen and (max-width: 2560px) {
 	header {
 		height: 1654px;
 	}
+
 	header .textos {
 		position: absolute;
 		top: 77%;
 		left: 60%;
 		margin: 100px 0 0;
 		max-width: 900px;
-		
+
 	}
+
 	.main .menu {
 		padding-top: 1480px;
-		margin: 0 0 200px ;
+		margin: 0 0 200px;
 	}
 }
-	
+
 
 @media screen and (max-width: 1440px) {
 	header .textos {
@@ -296,16 +359,19 @@ footer .copyright {
 		left: 54%;
 		margin: 100px 0 0;
 		max-width: 640px;
-		
+
 	}
+
 	.main .menu {
 		padding-top: 880px;
-		margin: 0 0 200px ;
+		margin: 0 0 200px;
 	}
+
 	header {
 		height: 1080px;
 	}
 }
+
 @media screen and (max-width: 1024px) {
 	header .textos {
 		position: absolute;
@@ -313,27 +379,33 @@ footer .copyright {
 		left: 50%;
 		margin: 100px 0 0;
 		max-width: 475px;
-		
+
 	}
+
 	.main .menu {
 		padding-top: 650px;
-		margin: 0 0 200px ;
+		margin: 0 0 200px;
 	}
+
 	.main .menu .contenedor-servicios {
 		background: transparent;
 		padding: 10px;
 		display: grid;
-		grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
-		gap: 10px; 
+		grid-template-columns: 1fr 1fr;
+		/* Dos columnas de igual tamaño */
+		gap: 10px;
 	}
+
 	header {
 		height: 1080px;
 	}
 }
+
 @media screen and (max-width: 800px) {
 	header {
 		background-position: -60px 0;
 	}
+
 	header .contenedor {
 		position: static;
 		height: auto;
@@ -372,7 +444,7 @@ footer .copyright {
 	.main .acerca-de article {
 		position: relative;
 		width: 100%;
-		top:-50px;
+		top: -50px;
 		transform: translate(0px, 0);
 	}
 
@@ -404,10 +476,12 @@ footer .copyright {
 		background-repeat: no-repeat;
 		height: 878px;
 	}
+
 	header .menu a {
 		margin: 10px 10px;
 		font-size: 18px;
 	}
+
 	header .textos {
 		position: absolute;
 		top: 80%;
@@ -415,17 +489,21 @@ footer .copyright {
 		margin: 100px 0 0;
 		max-width: 400px;
 	}
+
 	.main .acerca-de article h3 {
 		font-size: 34px;
 		margin-bottom: 10px;
 	}
+
 	.main .menu .contenedor-servicios {
 		background: transparent;
 		padding: 10px;
 		display: grid;
-		grid-template-columns: 1fr; /* Dos columnas de igual tamaño */
-		gap: 10px; 
+		grid-template-columns: 1fr;
+		/* Dos columnas de igual tamaño */
+		gap: 10px;
 	}
+
 	.main .menu article .nombre,
 	.main .menu article .precio {
 		font-size: 16px;

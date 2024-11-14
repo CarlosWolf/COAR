@@ -292,6 +292,10 @@ footer {
 	min-width: 200px;
 }
 
+.footer-container .footer-section:nth-child(1) {
+	margin-right: 70px;
+}
+
 .footer-section h4 {
 	font-size: 1.2em;
 	margin-bottom: 15px;
@@ -329,7 +333,7 @@ footer {
 }
 
 
-/* ----- ----- MEDIA QUERIES ----- ----- */
+/* ----- ----- MEDIA QUERIES ----- ----- 
 
 @media screen and (max-width: 2560px) {
 	header {
@@ -350,7 +354,7 @@ footer {
 		margin: 0 0 200px;
 	}
 }
-
+*/
 
 @media screen and (max-width: 1440px) {
 	header .textos {
@@ -399,6 +403,20 @@ footer {
 	header {
 		height: 1080px;
 	}
+
+	.footer-container{
+		grid-template-columns: 1fr 1fr;
+		display: grid;
+		margin: 0 auto 30px;
+	}
+	.footer-container .footer-section:nth-child(1) {
+		margin-right: 0;
+	}
+
+	.footer-section {
+		text-align: center;
+	}
+
 }
 
 @media screen and (max-width: 800px) {
@@ -524,5 +542,11 @@ footer {
 	.main .ubicacion .horarios .fin-semana {
 		width: 100%;
 		margin-bottom: 10px;
+	}
+
+	.footer-container{
+		grid-template-columns: 1fr;
+		display: grid;
+		margin: 0 auto 30px;
 	}
 }

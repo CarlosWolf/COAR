@@ -62,7 +62,7 @@ header .menu a:hover {
 }
 
 .textos {
-	max-width: 640px;
+	max-width: 540px;
 	margin-top: -200px;
 }
 
@@ -75,8 +75,9 @@ header .textos {
 	width: 100%;
 	color: #fff;
 	position: absolute;
-	top: 72%;
+	top: 58%;
 	left: 65%;
+	
 }
 
 header .textos .nombre {
@@ -147,7 +148,7 @@ header .textos h3 {
 }
 
 .main .menu {
-	padding-top: 1080px;
+	padding-top: 900px;
 	margin: 0 0 200px;
 }
 
@@ -170,11 +171,14 @@ header .textos h3 {
 .main .menu .contenedor-servicios .servicio1 {
 	/*border: 1px solid #000;*/
 	text-align: center;
-
+	max-width: 300px;
 }
 
 .main .menu .contenedor-servicios .servicio1 h2 {
 	font-weight: 300;
+}
+.main .menu .contenedor-servicios .servicio1 a {
+	
 }
 
 .main .galeria {
@@ -397,7 +401,7 @@ footer {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		/* Dos columnas de igual tamaño */
-		gap: 10px;
+		gap: 40px;
 	}
 
 	header {

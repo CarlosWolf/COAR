@@ -336,6 +336,61 @@ footer {
 	color: #bbb;
 }
 
+/*CSS DE LA HOJA Servicios.html*/
+.titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.servicio {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.servicio img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.servicio h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.servicio p {
+    padding: 0 1rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+.btn-ver-mas {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-ver-mas:hover {
+    background-color: #0056b3;
+}
+
+
 
 /* ----- ----- MEDIA QUERIES ----- ----- 
 

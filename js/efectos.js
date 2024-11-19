@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 // Scroll Elementos Menu
 	var acercaDe = $('#acerca-de').offset().top,
-		menu = $('#platillos').offset().top,
+		menu = $('#servicios').offset().top,
 		galeria = $('#galeria').offset().top,
 		ubicacion = $('#ubicacion').offset().top;
 
@@ -56,7 +56,7 @@ $(document).ready(function(){
 
 		$('header .textos').animate({
 			opacity: 1,
-			marginTop: '-200px'
+			marginTop: '-500px'
 		},1500);
 	}
 	

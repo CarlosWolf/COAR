@@ -414,8 +414,8 @@ footer {
 		margin: 0 0 200px;
 	}
 }
-*/
 
+*/
 @media screen and (max-width: 1440px) {
 	header .textos {
 		position: absolute;
@@ -488,6 +488,7 @@ footer {
 		position: static;
 		height: auto;
 	}
+
 
 	header .textos {
 		position: absolute;

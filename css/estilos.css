@@ -491,7 +491,7 @@ footer {
 
 	header .textos {
 		position: absolute;
-		top: 50%;
+		top: 45%;
 		left: 45%;
 		margin: 100px 0 0;
 		max-width: 370px;
@@ -562,7 +562,7 @@ footer {
 
 	header .textos {
 		position: absolute;
-		top: 110%;
+		top: 100%;
 		left: 0%;
 		margin: 100px 0 0;
 		max-width: 400px;

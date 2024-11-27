@@ -149,7 +149,7 @@ header .textos h3 {
 }
 
 .main .menu {
-	padding-top: 900px;
+	padding-top: 1200px;
 	margin: 0 0 200px;
 }
 
@@ -415,7 +415,7 @@ footer {
 	}
 }
 */
-
+/*
 @media screen and (max-width: 1440px) {
 	header .textos {
 		position: absolute;
@@ -434,7 +434,7 @@ footer {
 	header {
 		height: 1080px;
 	}
-}
+}*/
 
 @media screen and (max-width: 1024px) {
 	header .textos {

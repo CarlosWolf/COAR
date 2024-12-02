@@ -473,29 +473,20 @@ footer {
 
 */
 @media screen and (max-width: 1440px) {
-	header .textos {
-		position: absolute;
-		top: 50%;
-		left: 54%;
-		margin: 100px 0 0;
-		max-width: 640px;
 
-	}
 
 	.main .menu {
 		padding-top: 880px;
 		margin: 0 0 200px;
 	}
 
-	header {
-		height: 1080px;
-	}
+	
 }
 
 @media screen and (max-width: 1024px) {
 	header .textos {
 		position: absolute;
-		top: 50%;
+		top: 55%;
 		left: 50%;
 		margin: 100px 0 0;
 		max-width: 475px;
@@ -548,7 +539,7 @@ footer {
 
 	header .textos {
 		position: absolute;
-		top: 45%;
+		top: 50%;
 		left: 45%;
 		margin: 100px 0 0;
 		max-width: 370px;

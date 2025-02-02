@@ -26,14 +26,8 @@ body {
 
 header {
 	width: 100%;
-	background: url('../img/camionestas_transportadoras.jpg'), #281a0c;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center center;
-	background-repeat: no-repeat;
-	height: 1080px;
+	
 }
-
 
 header .contenedorHero {
 	position: relative;
@@ -41,10 +35,12 @@ header .contenedorHero {
 }
 
 header .menu {
+	/*text-align: right;*/
 	width: 100%;
-	text-align: right;
 	background-color: rgba(0, 0, 0, 0.5);
-	padding-right: 20px;
+	display: flex;
+	justify-content: space-between;
+	/*padding-right: 20px;*/
 }
 
 header .menu a {
@@ -57,8 +53,30 @@ header .menu a {
 	position: relative;
 }
 
+header .menu img {
+	max-width: 120px;
+}
+
 header .menu a:hover {
 	text-decoration: underline;
+}
+
+.menu-toggle{
+	display: none;
+}
+
+.logo{
+	padding: 10px 0 10px 10px;
+}
+
+.hero{
+	width: 100%;
+	background: url('../img/camionestas_transportadoras.jpg'), #281a0c;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 1080px;
 }
 
 .textos {
@@ -399,7 +417,8 @@ section .formulario{
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 540px;
+    max-width: 540px;
+	width: 100%;
 	margin: 0 auto ;
 
 }

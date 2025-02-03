@@ -497,13 +497,12 @@ button:hover {
 }**/
 
 @media screen and (max-width: 1024px) {
-	header .textos {
+	.hero .textos {
 		position: absolute;
 		top: 55%;
 		left: 50%;
 		margin: 100px 0 0;
 		max-width: 475px;
-
 	}
 
 	.main .menu {
@@ -518,10 +517,6 @@ button:hover {
 		grid-template-columns: 1fr 1fr;
 		/* Dos columnas de igual tamaño */
 		gap: 40px;
-	}
-
-	header {
-		height: 1080px;
 	}
 
 	.footer-container{
@@ -605,7 +600,7 @@ button:hover {
 }
 
 @media screen and (max-width: 426px) {
-	header {
+	.hero {
 		width: 100%;
 		background: url('../img/banesCoarMobile.jpg'), #281a0c;
 		background-size: cover;
@@ -615,12 +610,47 @@ button:hover {
 		height: 878px;
 	}
 
-	header .menu a {
-		margin: 10px 10px;
-		font-size: 18px;
+	.menu {
+		flex-direction: row;
+		align-items: center;
+	}
+	.menu.column {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.menu.column .menu-toggle{
+		margin: 0 auto;
 	}
 
-	header .textos {
+	.menu .menu-toggle {
+		display: block;
+		background: none;
+		border: none;
+		font-size: 42px;
+		cursor: pointer;
+		margin: 0 0 0 190px;
+	}
+
+	.menu-items {
+		display: none; /* Ocultar menú inicialmente */
+		flex-direction: column;
+		text-align: center;
+		width: 100%;
+	}
+
+	.menu-items a {
+		margin: 10px 0;
+		font-size: 18px;
+		text-decoration: none;
+		color: #fff; /* Ajusta el color según el diseño */
+	}
+
+	.menu-items.active {
+		display: flex; /* Mostrar menú cuando está activo */
+	}
+
+	.hero .textos {
 		position: absolute;
 		top: 100%;
 		left: 0%;

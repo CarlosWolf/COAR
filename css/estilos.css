@@ -88,13 +88,13 @@ header .menu a:hover {
 	width: 100%;
 }
 
-header .textos {
+.hero .textos {
 
 	width: 100%;
 	color: #fff;
 	position: absolute;
-	top: 58%;
-	left: 65%;
+	top: 90%;
+	left: 60%;
 	
 }
 
@@ -558,7 +558,7 @@ button:hover {
 	}
 
 	header .menu a {
-		margin: 10px 20px;
+		margin: 45px 20px;
 	}
 
 	header .textos .nombre {

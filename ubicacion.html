@@ -8,6 +8,10 @@
         type='text/css'>
     <!-- Incluye Font Awesome en tu proyecto -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Librerias para localizar el telefono del usuario -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    
     <link rel="stylesheet" href="css/contacto.css">
     <title>Contacto</title>
 </head>
@@ -40,6 +44,80 @@
                 <a href="https://facebook.com" class="icono facebook">Facebook</a>
                 <a href="https://instagram.com" class="icono instagram">Instagram</a>
             </div>
+        </div>
+    </section>
+
+    <section class="formulario">
+        <div class="form-container">
+            <h2>Formulario de Contacto</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" required>
+                </div>
+                <div class="form-group">
+                    <label for="nacionalidad">Nacionalidad:</label>
+                    <input type="text" id="nacionalidad" name="nacionalidad" required>
+                </div>
+                <div class="form-group">
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexo" name="sexo" required>
+                        <option value="">Seleccione...</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="lugarSalida">Lugar de Salida:</label>
+                    <input type="text" id="lugarSalida" name="lugarSalida" required>
+                </div>
+                <div class="form-group">
+                    <label for="lugarDestino">Lugar de Destino:</label>
+                    <select name="lugarDestino" id="lugarDestino" required>
+                        <option value="">Seleccione...</option>
+                        <option value="">Cancún</option>
+                        <option value="">Aeropuerto Chetumal</option>
+                        <option value="">Ciudad Chetumal (Cualquier punto)</option>
+                        <option value="">Zona Libre</option>
+                        <option value="">Calderias</option>
+                        <option value="">Oxtankah</option>
+                        <option value="">Bacalar</option>
+                        <option value="">Buena Vista y Mi querido BKL</option>
+                        <option value="">Mahahual</option>
+                        <option value="">Zona arqueologica Konhunlich</option>
+                        <option value="">Xcalak</option>
+                        <option value="">Felipe Carrillo Puerto</option>
+                        <option value="">Jose Maria Morelos</option>
+                        <option value="">Tulum</option>
+                        <option value="">Xel-Ha</option>
+                        <option value="">Playa Del Carmen</option>
+                        <option value="">Xcaret</option>
+                        <option value="">Tizimin</option>
+                        <option value="">Puerto Morelos</option>
+                        <option value="">Calakmul Ruinas</option>
+                        <option value="">Aeropuerto de Cancun</option>
+                        <option value="">Merida</option>
+                        <option value="">Aeropuerto de Merida</option>
+                        <option value="">Las Coloradas Yucatan</option>
+                        <option value="">Chiquila</option>
+                        <option value="">Campeche</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo:</label>
+                    <input type="text" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="tel">Telefono:</label>
+                    <input type="tel" id="tel" name="tel" required>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
         </div>
     </section>
 
@@ -90,6 +168,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/efectoServicios.js"></script>
+    <script src="js/form.js"></script>
 </body>
 
 </html>

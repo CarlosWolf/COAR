@@ -28,10 +28,7 @@ body {
 header {
 	width: 100%;
 	
-	height: auto;
-	
 }
-
 
 header .contenedorHero {
 	position: relative;
@@ -39,10 +36,12 @@ header .contenedorHero {
 }
 
 header .menu {
+	/*text-align: right;*/
 	width: 100%;
-	text-align: right;
 	background-color: rgba(0, 0, 0, 0.5);
-	padding-right: 20px;
+	display: flex;
+	justify-content: space-between;
+	/*padding-right: 20px;*/
 }
 
 header .menu a {
@@ -55,28 +54,23 @@ header .menu a {
 	position: relative;
 }
 
+header .menu img {
+	max-width: 120px;
+}
+
 header .menu a:hover {
 	text-decoration: underline;
 }
 
-.textos {
-	max-width: 540px;
-	margin-top: -200px;
+.menu-toggle{
+	display: none;
 }
 
-.textos img {
-	width: 100%;
+.logo{
+	padding: 10px 0 10px 10px;
 }
 
-header .textos {
 
-	width: 100%;
-	color: #fff;
-	position: absolute;
-	top: 58%;
-	left: 65%;
-	
-}
 
 header .textos .nombre {
 	font-size: 50px;
@@ -91,6 +85,16 @@ header .textos h3 {
 	font-weight: 300;
 	font-size: 25px;
 	font-style: italic;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 /* ----- ----- MAIN ----- ----- */
@@ -429,14 +433,7 @@ h2 {
 }
 
 @media screen and (max-width: 1024px) {
-	header .textos {
-		position: absolute;
-		top: 55%;
-		left: 50%;
-		margin: 100px 0 0;
-		max-width: 475px;
-
-	}
+	
 
 	.main .menu {
 		padding-top: 650px;
@@ -452,9 +449,7 @@ h2 {
 		gap: 40px;
 	}
 
-	header {
-		height: 1080px;
-	}
+	
 
 	.footer-container{
 		grid-template-columns: 1fr 1fr;
@@ -482,13 +477,7 @@ h2 {
 	}
 
 
-	header .textos {
-		position: absolute;
-		top: 50%;
-		left: 45%;
-		margin: 100px 0 0;
-		max-width: 370px;
-	}
+	
 
 	header .menu {
 		text-align: center;
@@ -496,7 +485,7 @@ h2 {
 	}
 
 	header .menu a {
-		margin: 10px 20px;
+		margin: 40px 20px;
 	}
 
 	header .textos .nombre {
@@ -538,24 +527,50 @@ h2 {
 }
 
 @media screen and (max-width: 426px) {
-	header {
+	
+	.menu {
+		flex-direction: row;
+		align-items: center;
+	}
+	.menu.column {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.menu.column .menu-toggle{
+		margin: 0 auto;
+	}
+
+	.menu .menu-toggle {
+		display: block;
+		background: none;
+		border: none;
+		font-size: 42px;
+		cursor: pointer;
+		margin: 0 0 0 170px;
+	}
+
+	.menu-items {
+		display: none; /* Ocultar menú inicialmente */
+		flex-direction: column;
+		text-align: center;
 		width: 100%;
-		background: url('../img/banesCoarMobile.jpg'), #281a0c;
-		background-size: cover;
-		background-attachment: fixed;
-		background-position: -15px center;
-		background-repeat: no-repeat;
-		height: 878px;
 	}
 
-	header .menu a {
-		margin: 10px 10px;
+	.menu-items a {
+		margin: 10px 0;
 		font-size: 18px;
+		text-decoration: none;
+		color: #fff; /* Ajusta el color según el diseño */
 	}
 
-	header .textos {
+	.menu-items.active {
+		display: flex; /* Mostrar menú cuando está activo */
+	}
+
+	.hero .textos {
 		position: absolute;
-		top: 100%;
+		top: 50%;
 		left: 0%;
 		margin: 100px 0 0;
 		max-width: 400px;

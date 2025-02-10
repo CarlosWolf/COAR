@@ -31,16 +31,25 @@
 </head>
 
 <body class="privacidad">
-    <header id="header-privacidad">
-        <div class="contenedorHero">
-            <nav class="menu">
-                <a href="index.html" id="btn-inicio">Inicio</a>
-                <a href="Servicios.html" id="btn-servicios">Servicios</a>
-                <a href="#" id="btn-vehiculos">Vehiculos</a>
-                <a href="ubicacion.html" id="btn-ubicacion">Ubicación</a>
-            </nav>
-        </div>
-    </header>
+    <header>
+		<div class="contenedorHero">
+			<nav class="menu">
+				<div class="logo">
+					<img src="img/coar_logo_negro.png" alt="bahia de chetumal">
+				</div>
+				<button class="menu-toggle" aria-label="Abrir menú">
+					☰
+				</button>
+				<div class="menu-items">
+                    <a href="index.html" id="btn-inicio">Inicio</a>
+					<a href="nosotros.html" id="btn-acerca-de">Acerca de</a>
+					<a href="Servicios.html" id="btn-menu">Servicios</a>
+                <!-- <a href="#" id="btn-galeria">Vehiculos</a>-->
+					<a href="ubicacion.html" id="btn-ubicacion">Ubicación</a>
+				</div>
+			</nav>
+		</div>
+	</header>
     <section class="main">
         <section class="aviso-privasidad">
             <div class="contenedor">
@@ -143,6 +152,7 @@
             <p>&copy; 2024 Transportadora turística COAR. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="js/nav.js"></script>
 </body>
 
 </html>

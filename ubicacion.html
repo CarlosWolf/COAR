@@ -18,15 +18,24 @@
 
 <body class="servicios">
     <header>
-        <div class="contenedorHero">
-            <nav class="menu">
-                <a href="index.html" id="btn-acerca-de">Inicio</a>
-                <a href="Servicios.html" id="btn-servicios">Servicios</a>
-                <a href="#" id="btn-vehiculos">Vehiculos</a>
-                <a href="ubicacion.html" id="btn-ubicacion">Contáctanos</a>
-            </nav>
-        </div>
-    </header>
+		<div class="contenedorHero">
+			<nav class="menu">
+				<div class="logo">
+					<img src="img/coar_logo_negro.png" alt="bahia de chetumal">
+				</div>
+				<button class="menu-toggle" aria-label="Abrir menú">
+					☰
+				</button>
+				<div class="menu-items">
+                    <a href="index.html" id="btn-inicio">Inicio</a>
+					<a href="nosotros.html" id="btn-acerca-de">Acerca de</a>
+					<a href="Servicios.html" id="btn-menu">Servicios</a>
+                <!-- <a href="#" id="btn-galeria">Vehiculos</a>-->
+					<a href="ubicacion.html" id="btn-ubicacion">Ubicación</a>
+				</div>
+			</nav>
+		</div>
+	</header>
     <section class="contacto">
         <h2>Contáctanos</h2>
         <div class="grid">
@@ -170,6 +179,7 @@
     <script src="js/parallax.js"></script>
     <script src="js/efectoServicios.js"></script>
     <script src="js/form.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 
 </html>

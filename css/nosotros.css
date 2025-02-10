@@ -1,0 +1,529 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", Arial, Sans-serif;
+	font-size: 16px;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.contenedorHero {
+	margin: auto;
+	overflow: hidden;
+}
+
+/* ----- ----- HEADER ----- ----- */
+
+header {
+	width: 100%;
+	
+}
+
+header .contenedorHero {
+	position: relative;
+	height: 100%;
+}
+
+header .menu {
+	/*text-align: right;*/
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: space-between;
+	/*padding-right: 20px;*/
+}
+
+header .menu a {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 300;
+	display: inline-block;
+	margin: 40px 20px;
+	text-decoration: none;
+	position: relative;
+}
+
+header .menu img {
+	max-width: 120px;
+}
+
+header .menu a:hover {
+	text-decoration: underline;
+}
+
+.menu-toggle{
+	display: none;
+}
+
+.logo{
+	padding: 10px 0 10px 10px;
+}
+
+.hero{
+	width: 100%;
+	background: url('../img/camionestas_transportadoras.jpg'), #281a0c;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 1080px;
+}
+
+.textos {
+	max-width: 540px;
+	margin-top: -200px;
+}
+
+.textos img {
+	width: 100%;
+}
+
+.hero .textos {
+
+	width: 100%;
+	color: #fff;
+	position: absolute;
+	top: 90%;
+	left: 60%;
+	
+}
+
+header .textos .nombre {
+	font-size: 50px;
+	font-weight: 600;
+}
+
+header .textos .nombre span {
+	font-weight: 300;
+}
+
+header .textos h3 {
+	font-weight: 300;
+	font-size: 25px;
+	font-style: italic;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Sección Sobre Nosotros */
+.sobre-nosotros {
+	background-color: #fff;
+	padding: 50px 20px;
+	text-align: center;
+}
+
+.contenedor-sobre {
+	max-width: 1000px;
+	margin: auto;
+}
+
+/* Diseño en columnas */
+.contenedor-columnas {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	margin-bottom: 20px;
+	justify-content: center;
+}
+
+.columna {
+	flex: 1 1 400px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.columna.izquierda {
+	text-align: left;
+}
+
+.columna.derecha {
+	text-align: left;
+}
+
+/* Botón "Nuestros Servicios" */
+.boton-servicios {
+	
+}
+
+.btn-servicios {
+	display: inline-block;
+	padding: 12px 25px;
+	background-color: #ffb703;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 1rem;
+	transition: background-color 0.3s;
+	font-weight: bold;
+}
+
+.btn-servicios:hover {
+	background-color: #a8862e;
+}
+
+
+/* Sección Imagenes en Modales */
+
+.icono {
+	text-align: center;
+	flex: 1 1 300px;
+	max-width: 300px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	transition: transform 0.3s ease-in-out;
+	margin: 0 auto;
+}
+
+.icono img {
+	width: 100%;
+	height: 200px; /* Tamaño estático */
+	object-fit: cover; /* Ajustar sin distorsionar */
+	border-radius: 10px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.icono:hover img {
+	transform: scale(1.1);
+}
+
+.icono p {
+	margin-bottom: 20px;
+}
+
+/* Estilo del modal */
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+.modal img {
+	max-width: 90%;
+	max-height: 90%;
+	border-radius: 10px;
+}
+
+.modal.show {
+	display: flex;
+}
+
+
+/* ----- ----- FOOTER ----- ----- */
+footer {
+	background: #000;
+}
+
+footer .copyright {
+	text-align: center;
+	padding: 15px 0;
+	color: #fff;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 40px 0;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.footer-section {
+	flex: 1;
+	min-width: 200px;
+}
+
+.footer-container .footer-section:nth-child(1) {
+	margin-right: 70px;
+}
+
+.footer-section h4 {
+	font-size: 1.2em;
+	margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section a,
+.footer-section li {
+	color: #bbb;
+	margin: 5px 0;
+	text-decoration: none;
+}
+
+.footer-section ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.footer-section a:hover {
+	color: #fff;
+}
+
+.social-icons img {
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+}
+
+.footer-bottom {
+	text-align: center;
+	padding: 20px;
+	font-size: 0.9em;
+	border-top: 1px solid #444;
+	color: #bbb;
+}
+
+@media screen and (max-width: 1024px) {
+	.hero .textos {
+		position: absolute;
+		top: 55%;
+		left: 50%;
+		margin: 100px 0 0;
+		max-width: 475px;
+	}
+
+	.main .menu {
+		padding-top: 650px;
+		margin: 0 0 200px;
+	}
+
+	.main .menu .contenedor-servicios {
+		background: transparent;
+		padding: 10px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		/* Dos columnas de igual tamaño */
+		gap: 40px;
+	}
+
+	.footer-container{
+		grid-template-columns: 1fr 1fr;
+		display: grid;
+		margin: 0 auto 30px;
+	}
+	.footer-container .footer-section:nth-child(1) {
+		margin-right: 0;
+	}
+
+	.footer-section {
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+	header {
+		background-position: -60px 0;
+	}
+
+	header .contenedor {
+		position: static;
+		height: auto;
+	}
+
+	header .textos {
+		position: absolute;
+		top: 50%;
+		left: 45%;
+		margin: 100px 0 0;
+		max-width: 370px;
+	}
+
+	header .menu {
+		text-align: center;
+		padding: 0 0;
+	}
+
+	header .menu a {
+		margin: 45px 20px;
+	}
+
+	header .textos .nombre {
+		font-size: 30px;
+	}
+
+	header .textos h3 {
+		font-size: 18px;
+	}
+
+	.main .acerca-de .foto {
+		position: relative;
+		width: 100%;
+	}
+
+	.main .acerca-de article {
+		position: relative;
+		width: 100%;
+		top: -50px;
+		transform: translate(0px, 0);
+	}
+
+	.main .menu {
+		padding-top: 300px;
+	}
+
+	.main .menu article {
+		width: 100%;
+	}
+
+	.main .galeria .foto {
+		width: 50%;
+	}
+
+	.main .mapa {
+		width: 80%;
+		margin: auto;
+	}
+
+
+    /*Iconos*/
+    .icono {
+		flex: 1 1 45%;
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.hero {
+		width: 100%;
+		background: url('../img/banesCoarMobile.jpg'), #281a0c;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: -15px center;
+		background-repeat: no-repeat;
+		height: 878px;
+	}
+
+	.menu {
+		flex-direction: row;
+		align-items: center;
+	}
+	.menu.column {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.menu.column .menu-toggle{
+		margin: 0 auto;
+	}
+
+	.menu .menu-toggle {
+		display: block;
+		background: none;
+		border: none;
+		font-size: 42px;
+		cursor: pointer;
+		margin: 0 0 0 170px;
+	}
+
+	.menu-items {
+		display: none; /* Ocultar menú inicialmente */
+		flex-direction: column;
+		text-align: center;
+		width: 100%;
+	}
+
+	.menu-items a {
+		margin: 10px 0;
+		font-size: 18px;
+		text-decoration: none;
+		color: #fff; /* Ajusta el color según el diseño */
+	}
+
+	.menu-items.active {
+		display: flex; /* Mostrar menú cuando está activo */
+	}
+
+	.hero .textos {
+		position: absolute;
+		top: 50%;
+		left: 0%;
+		margin: 100px 0 0;
+		max-width: 400px;
+	}
+
+	.main .acerca-de article h3 {
+		font-size: 34px;
+		margin-bottom: 10px;
+	}
+
+	.main .menu .contenedor-servicios {
+		background: transparent;
+		padding: 10px;
+		display: grid;
+		grid-template-columns: 1fr;
+		/* Dos columnas de igual tamaño */
+		gap: 10px;
+	}
+
+	.main .menu article .nombre,
+	.main .menu article .precio {
+		font-size: 16px;
+		line-height: 16px;
+	}
+
+	.main .ubicacion .direccion,
+	.main .ubicacion .horarios {
+		width: 100%;
+		text-align: center;
+	}
+
+	.main .ubicacion .direccion {
+		margin-bottom: 20px;
+	}
+
+	.main .ubicacion .horarios .entre-semana,
+	.main .ubicacion .horarios .fin-semana {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.footer-container{
+		grid-template-columns: 1fr;
+		display: grid;
+		margin: 0 auto 30px;
+	}
+
+    /*Iconos*/
+    .icono {
+		flex: 1 1 100%;
+	}
+
+	h2 {
+		font-size: 1.8rem;
+	}
+
+	p {
+		font-size: 1rem;
+	}
+}

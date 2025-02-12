@@ -107,7 +107,7 @@ header .textos .nombre span {
 	font-weight: 300;
 }
 
-header .textos h3 {
+header .textos h1 {
 	font-weight: 300;
 	font-size: 25px;
 	font-style: italic;
@@ -153,7 +153,7 @@ header .textos h3 {
 	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
-.main .acerca-de article h3 {
+.main .acerca-de article h1 {
 	font-size: 50px;
 	font-weight: 300;
 	margin-bottom: 40px;
